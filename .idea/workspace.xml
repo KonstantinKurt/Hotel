@@ -2,19 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24393afd-6fbd-470e-aeec-efe1411e1049" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/controllers/hallController.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/libs/enshureAdmin.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/hallModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/models/ticketModel.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/routes/hallRouter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/seeders/halls.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/controllers/ticketController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/routes/ticketRouter.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/roomsRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/connections/localMongoConnection.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/serverless.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/controllers/hallController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/hallController.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/libs/enshureAdmin.js" beforeDir="false" afterPath="$PROJECT_DIR$/libs/enshureAdmin.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/hallRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/hallRouter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/libs/enshureAdmin.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+            <state relative-caret-position="375">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
             </state>
           </provider>
         </entry>
@@ -36,35 +30,35 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/routes/hallRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
+            <state relative-caret-position="135">
+              <caret line="9" column="82" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="82" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/controllers/hallController.js">
+        <entry file="file://$PROJECT_DIR$/routes/ticketRouter.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
+            <state relative-caret-position="150">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/ticketController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="283">
+              <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/hallModel.js">
+        <entry file="file://$PROJECT_DIR$/models/ticketModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/seeders/halls.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="686" lean-forward="true" selection-start-column="686" selection-end-column="686" />
+            <state relative-caret-position="60">
+              <caret line="4" column="11" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="11" />
             </state>
           </provider>
         </entry>
@@ -97,13 +91,15 @@
         <option value="$PROJECT_DIR$/models/roomModel.js" />
         <option value="$PROJECT_DIR$/models/ticketModel.js" />
         <option value="$PROJECT_DIR$/controllers/hallRouter.js" />
-        <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/seeders/package.json" />
         <option value="$PROJECT_DIR$/models/hallModel.js" />
         <option value="$PROJECT_DIR$/seeders/halls.json" />
-        <option value="$PROJECT_DIR$/controllers/hallController.js" />
         <option value="$PROJECT_DIR$/routes/hallRouter.js" />
         <option value="$PROJECT_DIR$/libs/enshureAdmin.js" />
+        <option value="$PROJECT_DIR$/routes/ticketRouter.js" />
+        <option value="$PROJECT_DIR$/controllers/hallController.js" />
+        <option value="$PROJECT_DIR$/app.js" />
+        <option value="$PROJECT_DIR$/controllers/ticketController.js" />
       </list>
     </option>
   </component>
@@ -193,12 +189,12 @@
       <option name="presentableId" value="Default" />
       <updated>1556781400707</updated>
       <workItem from="1556781402027" duration="2155000" />
-      <workItem from="1556785344871" duration="15847000" />
+      <workItem from="1556785344871" duration="22678000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18002000" />
+    <option name="totallyTimeSpent" value="24833000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -267,22 +263,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/ticketModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/seeders/asd.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/hallModel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/seeders/halls.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -298,13 +280,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/hallController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="62" column="6" lean-forward="true" selection-start-line="62" selection-start-column="6" selection-end-line="62" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -312,31 +287,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app.js">
+    <entry file="file://$PROJECT_DIR$/models/hallModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="255">
+          <caret line="17" column="52" lean-forward="true" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/enshureToken.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
+        <state relative-caret-position="653">
           <caret line="54" column="9" lean-forward="true" selection-start-line="54" selection-start-column="9" selection-end-line="54" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/hallRouter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="24" lean-forward="true" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/enshureAdmin.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="68" lean-forward="true" selection-start-line="11" selection-start-column="68" selection-end-line="11" selection-end-column="68" />
+        <state relative-caret-position="180">
+          <caret line="12" column="49" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/hallRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="82" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/ticketModel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="11" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/hallController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/ticketRouter.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/ticketController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="283">
+          <caret line="53" column="26" lean-forward="true" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
         </state>
       </provider>
     </entry>

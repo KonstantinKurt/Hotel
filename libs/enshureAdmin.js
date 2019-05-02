@@ -1,5 +1,4 @@
 const request = require('request');
-const jwkToPem = require('jwk-to-pem');
 const jwt = require('jsonwebtoken');
 
 module.exports = function validateToken(req, res, next) {
@@ -11,5 +10,6 @@ module.exports = function validateToken(req, res, next) {
     else{
        return res.status(403).json({message: "Permissions denied"});
     }
+    //res.status(200).json(decodedJwt.payload.sub);
 
 };

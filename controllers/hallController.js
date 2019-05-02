@@ -35,8 +35,8 @@ module.exports = {
                     count: docs.length,
                     users: docs.map(doc => {
                         return {
-                            description: doc.name,
-                            title: doc.email,
+                            title: doc.title,
+                            description: doc.description,
                             _id: doc._id,
                             isEmpty: doc.isEmpty,
                             request: {
