@@ -25,9 +25,9 @@ module.exports = {
                 .exec()
                 .then(docs => {
                     if (docs) {
-                        for(let i =0; i < docs.length; i++){
-                            if(docs[i].from <= compareTo && compareFrom <= docs[i].to){
-                                return  res.status(400).json({message: "Busy!!!"});
+                        for (let i = 0; i < docs.length; i++) {
+                            if (docs[i].from <= compareTo && compareFrom <= docs[i].to) {
+                                return res.status(400).json({message: "Busy!!!"});
                             }
                         }
                         ticket.save()
@@ -62,4 +62,53 @@ module.exports = {
                 });
         });
     },
+    deleteTicket: async function (req, res) {
+        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+            if (err) {
+                return res.status(403).send("No authority");
+            }
+            const decodedJwt = jwt.decode(req.headers.token, {complete: true});
+            Ticket.deleteOne({user_id: decodedJwt.payload.doc._id, _id: req.body._id})
+                .exec()
+                .then(doc => {
+                    if (doc) {
+                        res.status(200).json(doc);
+                    }
+                    res.status(403).send("No authority");
+                })
+                .catch(err => {
+                    console.log(err);
+                    res.status(500).json({
+                        error: err
+                    });
+                });
+
+
+        });
+    },
+    getAlltickets: async function(req,res){
+        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+            if (err) {
+                return res.status(403).send("No authority");
+            }
+            Ticket.find()
+                .exec()
+                .then(docs => {
+                    if (docs.length > 0) {
+                        res.status(200).json(docs);
+                    } else {
+                        res.status(404).json({
+                            message: `DB is empty`,
+                        });
+                    }
+                })
+                .catch(err => {
+                    console.log(err);
+                    res.status(500).json({
+                        error: err
+                    });
+                });
+        });
+    },
+
 };
