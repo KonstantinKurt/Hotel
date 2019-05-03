@@ -9,18 +9,16 @@ const ticketScheme = new Schema({
     },
     user_id:{
         type: String,
+        //ref: 'User',
         required: true,
-        unique: true,
     },
     from: {
         type: Date,
         required: true,
-        default: null
     },
     to: {
         type: Date,
         required: true,
-        default: null
     },
     title: {
         type: String,
@@ -29,7 +27,7 @@ const ticketScheme = new Schema({
     },
 }, { versionKey: false });
 
-ticketScheme.plugin(uniqueValidator);
+//ticketScheme.plugin(uniqueValidator);
 
 
 

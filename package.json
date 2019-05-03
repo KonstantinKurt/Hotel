@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "amazon-cognito-identity-js": "^3.0.11",
+    "bcrypt": "^3.0.6",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
@@ -19,6 +20,7 @@
     "jwk-to-pem": "^2.0.1",
     "mongoose": "^5.5.5",
     "mongoose-unique-validator": "^2.0.3",
+    "mongoose-validator": "^2.1.0",
     "node-fetch": "^2.5.0",
     "request": "^2.88.0"
   },
