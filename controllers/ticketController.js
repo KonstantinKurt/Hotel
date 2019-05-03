@@ -1,9 +1,8 @@
-const Hall = require('../models/hallModel.js');
 const Ticket = require('../models/ticketModel.js');
 const mongoose = require('mongoose');
 const jwt = require('jsonwebtoken');
 
-const enshureTimeInterval = require('../libs/enshureTimeInterval');
+//const enshureTimeInterval = require('../libs/enshureTimeInterval');
 module.exports = {
     addTicket: async function (req, res) {
         jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
