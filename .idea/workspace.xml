@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="24393afd-6fbd-470e-aeec-efe1411e1049" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/libs/enshureTokenWithBarrier.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/hallController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/hallController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/ticketController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/ticketController.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controllers/usersController.js" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/usersController.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/hallModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/hallModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/ticketModel.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/ticketModel.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/hallRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/hallRouter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/ticketRouter.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/ticketRouter.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controllers/hallController.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="59" column="51" lean-forward="true" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+            <state relative-caret-position="960">
+              <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -56,6 +48,15 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/usersController.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/libs/enshureTokenWithBarrier.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/hallModel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+            <state relative-caret-position="180">
+              <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -121,13 +122,13 @@
         <option value="$PROJECT_DIR$/seeders/hallSeeder.js" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/models/ticketModel.js" />
-        <option value="$PROJECT_DIR$/controllers/usersController.js" />
         <option value="$PROJECT_DIR$/libs/enshureTokenWithBarrier.js" />
         <option value="$PROJECT_DIR$/routes/ticketRouter.js" />
         <option value="$PROJECT_DIR$/routes/hallRouter.js" />
         <option value="$PROJECT_DIR$/controllers/ticketController.js" />
         <option value="$PROJECT_DIR$/controllers/hallController.js" />
         <option value="$PROJECT_DIR$/models/hallModel.js" />
+        <option value="$PROJECT_DIR$/controllers/usersController.js" />
       </list>
     </option>
   </component>
@@ -225,12 +226,12 @@
       <workItem from="1556785344871" duration="23454000" />
       <workItem from="1556865138203" duration="23094000" />
       <workItem from="1557123423064" duration="617000" />
-      <workItem from="1557128631595" duration="1659000" />
+      <workItem from="1557128631595" duration="1999000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="50979000" />
+    <option name="totallyTimeSpent" value="51319000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
@@ -351,13 +352,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/libs/enshureToken.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/libs/enshureTokenWithBarrier.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -369,13 +363,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="480">
           <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/usersController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="23" column="32" lean-forward="true" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -407,17 +394,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/hallController.js">
+    <entry file="file://$PROJECT_DIR$/models/hallModel.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="59" column="51" lean-forward="true" selection-start-line="59" selection-start-column="51" selection-end-line="59" selection-end-column="51" />
+        <state relative-caret-position="180">
+          <caret line="12" column="48" lean-forward="true" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/hallModel.js">
+    <entry file="file://$PROJECT_DIR$/controllers/hallController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
+        <state relative-caret-position="960">
+          <caret line="64" column="37" lean-forward="true" selection-start-line="64" selection-start-column="37" selection-end-line="64" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/libs/enshureToken.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="2" lean-forward="true" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/usersController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="45" column="33" lean-forward="true" selection-start-line="45" selection-start-column="33" selection-end-line="45" selection-end-column="33" />
         </state>
       </provider>
     </entry>

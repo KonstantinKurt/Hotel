@@ -34,7 +34,7 @@ module.exports = {
                         const token = jwt.sign({doc}, process.env.SECRET, { expiresIn: '72h' });
                         res.status(200).json({
                             _id:doc._id,
-                            token: token});
+                            token: `Barrier ${token}`});
                     }
                 }
                 res.status(404).json({
