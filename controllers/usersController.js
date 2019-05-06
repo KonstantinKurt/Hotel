@@ -12,7 +12,11 @@ module.exports = {
         });
         user.save()
             .then(doc => {
-                res.status(201).json(doc);
+                const response = {
+                    "id": doc._id,
+                    "email": doc.email
+                };
+                res.status(201).json(response);
             })
             .catch(err => {
                 console.log(err);

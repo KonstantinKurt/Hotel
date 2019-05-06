@@ -9,7 +9,7 @@ const ticketScheme = new Schema({
     },
     user_id:{
         type: String,
-        //ref: 'User',
+        ref: 'User',
         required: true,
     },
     from: {

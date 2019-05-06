@@ -93,13 +93,7 @@ module.exports = {
             Ticket.find()
                 .exec()
                 .then(docs => {
-                    if (docs.length > 0) {
-                        res.status(200).json(docs);
-                    } else {
-                        res.status(404).json({
-                            message: `DB is empty`,
-                        });
-                    }
+                    res.status(200).json(docs);
                 })
                 .catch(err => {
                     console.log(err);

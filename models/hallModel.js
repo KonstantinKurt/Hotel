@@ -9,10 +9,5 @@ const hallScheme = new Schema({
         type: String,
         required: true
     },
-    isEmpty:{
-        type: Boolean,
-        required: true,
-        default: true
-    }
 }, { versionKey: false });
 module.exports = mongoose.model('Hall', hallScheme);

@@ -44,16 +44,12 @@ module.exports = {
                 .then(docs => {
                     const response = {
                         count: docs.length,
-                        users: docs.map(doc => {
+                        halls: docs.map(doc => {
                             return {
                                 title: doc.title,
                                 description: doc.description,
                                 _id: doc._id,
                                 isEmpty: doc.isEmpty,
-                                request: {
-                                    type: `GET`,
-                                    url: `${req.protocol}://${req.get('host')}/user/${doc._id﻿}`,
-                                }
                             };
                         })
                     };
