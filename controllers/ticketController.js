@@ -9,7 +9,7 @@ module.exports = {
             if (err) {
                 return res.status(403).send("No authority");
             }
-            const decodedJwt = jwt.decode(req.headers.token, {complete: true});
+            const decodedJwt = jwt.decode(req.token, {complete: true});
             const ticket = new Ticket({
                 _id: new mongoose.Types.ObjectId(),
                 hall_id: req.body.hall_id,
@@ -66,7 +66,7 @@ module.exports = {
             if (err) {
                 return res.status(403).send("No authority");
             }
-            const decodedJwt = jwt.decode(req.headers.token, {complete: true});
+            const decodedJwt = jwt.decode(req.token, {complete: true});
             Ticket.deleteOne({user_id: decodedJwt.payload.doc._id, _id: req.body._id})
                 .exec()
                 .then(doc => {
