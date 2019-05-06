@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 
 module.exports = {
     addHall:async function(req, res) {
-        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
             if (err) {
                 return res.status(403).send("No authority");
             }
@@ -35,7 +35,7 @@ module.exports = {
         });
     },
     getAllHalls: async function(req,res){
-        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
             if (err) {
                 return res.status(403).send("No authority");
             }
@@ -70,7 +70,7 @@ module.exports = {
         });
     },
     deleteHall: async function(req,res){
-        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
             if (err) {
                 return res.status(403).send("No authority");
             }

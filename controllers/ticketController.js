@@ -5,7 +5,7 @@ const jwt = require('jsonwebtoken');
 //const enshureTimeInterval = require('../libs/enshureTimeInterval');
 module.exports = {
     addTicket: async function (req, res) {
-        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
             if (err) {
                 return res.status(403).send("No authority");
             }
@@ -62,7 +62,7 @@ module.exports = {
         });
     },
     deleteTicket: async function (req, res) {
-        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
             if (err) {
                 return res.status(403).send("No authority");
             }
@@ -86,7 +86,7 @@ module.exports = {
         });
     },
     getAlltickets: async function(req,res){
-        jwt.verify(req.headers.token, process.env.SECRET, (err, authData) => {
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
             if (err) {
                 return res.status(403).send("No authority");
             }
