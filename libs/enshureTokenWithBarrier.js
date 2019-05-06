@@ -6,7 +6,7 @@ module.exports = function(req, res, next) {
         req.token = bearer[1];
         next();
     } else {
-        res.staus(403).json({message: "invalid token"});
+        res.status(403).json({message: "invalid token"});
     }
 };
 
