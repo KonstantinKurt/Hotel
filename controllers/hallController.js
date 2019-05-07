@@ -35,10 +35,7 @@ module.exports = {
         });
     },
     getAllHalls: async function(req,res){
-        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
-            if (err) {
-                return res.status(403).send("No authority");
-            }
+
             Hall.find()
                 .exec()
                 .then(docs => {
@@ -67,7 +64,7 @@ module.exports = {
                         error: err
                     });
                 });
-        });
+
     },
     deleteHall: async function(req,res){
         jwt.verify(req.token, process.env.SECRET, (err, authData) => {

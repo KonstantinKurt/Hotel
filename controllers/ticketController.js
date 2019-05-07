@@ -86,10 +86,7 @@ module.exports = {
         });
     },
     getAlltickets: async function(req,res){
-        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
-            if (err) {
-                return res.status(403).send("No authority");
-            }
+
             Ticket.find()
                 .exec()
                 .then(docs => {
@@ -101,13 +98,9 @@ module.exports = {
                         error: err
                     });
                 });
-        });
     },
     getTicketsWithParams: async function(req,res){
-        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
-            if (err) {
-                return res.status(403).send("No authority");
-            }
+
             const from = req.params.from;
             const to = req.params.to;
             Ticket.find({from:{$gte: from},to:{$lte:to}})
@@ -121,7 +114,7 @@ module.exports = {
                         error: err
                     });
                 });
-        });
+
     },
 
 };
