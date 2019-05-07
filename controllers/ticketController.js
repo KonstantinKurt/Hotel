@@ -103,5 +103,28 @@ module.exports = {
                 });
         });
     },
+    getTicketsWithParams: async function(req,res){
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
+            if (err) {
+                return res.status(403).send("No authority");
+            }
+            const from = req.params.from;
+            const to = req.params.to;
+
+            console.log(`!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!${from}`);
+
+            Ticket.find({from:{$gte: from},to:{$lte:to}})
+                .exec()
+                .then(docs => {
+                    res.status(200).json(docs);
+                })
+                .catch(err => {
+                    console.log(err);
+                    res.status(500).json({
+                        error: err
+                    });
+                });
+        });
+    },
 
 };
