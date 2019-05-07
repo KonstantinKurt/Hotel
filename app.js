@@ -51,11 +51,11 @@ app.use('/', ticketRouter);
 //
 // expressSwagger(options);
 
-var swaggerUi = require('swagger-ui-express'),
-    swaggerDocument = require('./swagger.json');
-
-app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.use('/api/v1', router);
+// var swaggerUi = require('swagger-ui-express'),
+//     swaggerDocument = require('./swagger.json');
+//
+// app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+// app.use('/api/v1', router);
 
 app.listen(process.env.PORT, () => {
     console.log(`Server runs on http://localhost:${process.env.PORT}; Ctrl+C for exit `);
