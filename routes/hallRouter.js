@@ -8,9 +8,9 @@ const enshureTokenWithBarrier = require('../libs/enshureTokenWithBarrier.js');
 
 
 
-router.put('/hall',enshureTokenWithBarrier,enshureAdmin, hallController.addHall); //Only admin can add new halls;
-router.get('/halls',enshureTokenWithBarrier, hallController.getAllHalls); //All authenticated users can view all halls;
-router.delete('/hall/:id',enshureTokenWithBarrier,enshureAdmin, hallController.deleteHall); //Only admin can delete hall;
+router.put('/halls',enshureTokenWithBarrier,enshureAdmin, hallController.addHall); //Only admin can add new halls;
+router.get('/halls', hallController.getAllHalls);
+router.delete('/halls/:id',enshureTokenWithBarrier,enshureAdmin, hallController.deleteHall); //Only admin can delete hall;
 // Developer routes
 router.get('/test', enshureAdmin);
 
