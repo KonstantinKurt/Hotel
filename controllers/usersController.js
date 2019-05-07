@@ -37,7 +37,7 @@ module.exports = {
                             token: `Barrier ${token}`});
                     }
                 }
-                res.status(404).json({
+                res.status(401).json({
                     message: `Incorrect password or email`,
                 });
 
