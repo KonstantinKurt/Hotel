@@ -13,11 +13,11 @@ const ticketScheme = new Schema({
         required: true,
     },
     from: {
-        type: Date,
+        type: Number,
         required: true,
     },
     to: {
-        type: Date,
+        type: Number,
         required: true,
     },
     title: {

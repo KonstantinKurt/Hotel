@@ -1,6 +1,7 @@
 const express = require('express');
 const app = express();
 require('dotenv').config();
+
 global.fetch = require(`node-fetch`);
 
 const bodyParser = require('body-parser');
@@ -14,6 +15,8 @@ const ticketRouter = require('./routes/ticketRouter.js');
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+
 
 app.use('/', usersRouter);
 app.use('/', hallRouter);

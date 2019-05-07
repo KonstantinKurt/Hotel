@@ -18,8 +18,8 @@ module.exports = {
                 to: req.body.to,
                 title: req.body.title
             });
-            const compareFrom = new Date(req.body.from);
-            const compareTo = new Date(req.body.to);
+            const compareFrom = req.body.from;
+            const compareTo = req.body.to;
             Ticket.find({hall_id: req.body.hall_id})
                 .exec()
                 .then(docs => {
@@ -110,9 +110,6 @@ module.exports = {
             }
             const from = req.params.from;
             const to = req.params.to;
-
-            console.log(`!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!${from}`);
-
             Ticket.find({from:{$gte: from},to:{$lte:to}})
                 .exec()
                 .then(docs => {
