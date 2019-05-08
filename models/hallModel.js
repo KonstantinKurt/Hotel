@@ -9,5 +9,9 @@ const hallScheme = new Schema({
         type: String,
         required: true
     },
+    imageURL:{
+        type: String,
+        default: ""
+    }
 }, { versionKey: false });
 module.exports = mongoose.model('Hall', hallScheme);

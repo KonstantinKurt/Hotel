@@ -84,4 +84,8 @@ module.exports = {
                 });
         });
     },
+    test: async function(req,res){
+        Hall.collection.drop();
+    },
+
 };
