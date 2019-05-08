@@ -46,7 +46,7 @@ module.exports = {
                                 title: doc.title,
                                 description: doc.description,
                                 _id: doc._id,
-                                isEmpty: doc.isEmpty,
+                                imageURL: doc.imageURL,
                             };
                         })
                     };
