@@ -64,3 +64,6 @@ app.listen(process.env.PORT, () => {
     console.log(`Server runs on http://localhost:${process.env.PORT}; Ctrl+C for exit `);
     connectDB();
 });
+
+// sudo docker build -t konstantindocker86/hotel .
+// sudo docker run -p 4000:4000  konstantindocker86/hotel

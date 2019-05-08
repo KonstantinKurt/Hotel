@@ -84,8 +84,12 @@ module.exports = {
                 });
         });
     },
-    test: async function(req,res){
-        Hall.collection.drop();
+    test: async function(req,res) {
+        Hall.updateMany({title: "Book conference room for 100 people in Chambéry"}, {title: "Book conference room for 100 people in Chambery"})
+            .exec()
+            .then(docs => {
+                res.status(200).json(docs);
+            })
     },
 
 };
