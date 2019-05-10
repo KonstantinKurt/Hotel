@@ -67,7 +67,7 @@ module.exports = {
                 return res.status(403).send("No authority");
             }
             const decodedJwt = jwt.decode(req.token, {complete: true});
-            Ticket.deleteOne({user_id: decodedJwt.payload.doc._id, _id: req.params._id})
+            Ticket.deleteOne({user_id: decodedJwt.payload.doc._id, _id: req.params.id})
                 .exec()
                 .then(doc => {
                     if (doc) {
