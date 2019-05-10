@@ -122,6 +122,47 @@ module.exports = {
 
 
     },
+    updateTicket: async function(req,res){
+        jwt.verify(req.token, process.env.SECRET, (err, authData) => {
+            if (err) {
+                return res.status(403).send("No authority");
+            }
+
+            const decodedJwt = jwt.decode(req.token, {complete: true});
+            const updateObj =  {
+                from: req.body.from,
+                to: req.body.to,
+                title: req.body.title
+            };
+            // console.log(updateObj)
+            // for (let key in updateObj) {
+            //     if (updateObj[key] == null) {
+            //         res.status(400).json({message: "You have to update all fields in ticket object!!"});
+            //     }
+            // }
+
+            // const nullValues = Object.values(updateObj).find(value => Boolean(value) === false);
+
+            const nullValues = Object.values(updateObj).includes('');
+
+            if (nullValues) {
+                res.status(400).json({message: "You have to update all fields in ticket object!!"});
+                return;
+            }
+
+            Ticket.updateOne({user_id: decodedJwt.payload.doc._id, _id: req.params.id},updateObj)
+                .exec()
+                .then(doc => {
+                    res.status(200).json(doc);
+                })
+                .catch(err => {
+                    console.log(err);
+                    res.status(500).json({
+                        error: err
+                    });
+                });
+        });
+    },
 
 
 

@@ -8,6 +8,7 @@ const enshureTokenWithBarrier = require('../libs/enshureTokenWithBarrier.js');
 router.post('/tickets',enshureTokenWithBarrier, ticketController.addTicket); //All authenticated users can buy ticket, if room is empty;
 router.delete('/tickets/:id',enshureTokenWithBarrier, ticketController.deleteTicket);//All authenticated users can delete his own ticket;
 router.get('/tickets', ticketController.getAlltickets);
+router.put('/ticket/:id',enshureTokenWithBarrier, ticketController.updateTicket);
 router.get('/ticketsparams/:from/:to', ticketController.getTicketsWithParams);
 
 ///////
