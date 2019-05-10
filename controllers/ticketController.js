@@ -116,5 +116,13 @@ module.exports = {
                 });
 
     },
+    deleteall: async function(req,res){
+        Ticket.collection.drop();
+        await res.status(200).json({message: "Tickets collection dropped!"});
+
+
+    },
+
+
 
 };

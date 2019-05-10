@@ -10,5 +10,10 @@ router.delete('/tickets/:id',enshureTokenWithBarrier, ticketController.deleteTic
 router.get('/tickets', ticketController.getAlltickets);
 router.get('/ticketsparams/:from/:to', ticketController.getTicketsWithParams);
 
+///////
+
+// Developer routes
+router.delete('/deleteall', ticketController.deleteall);
+
 module.exports = router;
 
